@@ -3,7 +3,9 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
   <footer class="footer">
     <p class="company-name">上海舒欣创中信息有限公司</p>
     <p class="copyright">&copy; {{ new Date().getFullYear() }} All Rights Reserved.</p>
@@ -11,6 +13,9 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+main {
+  flex: 1;
+}
 .footer {
   margin-top: 4rem;
   padding-top: 2rem;
